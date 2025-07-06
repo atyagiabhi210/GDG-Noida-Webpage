@@ -16,6 +16,44 @@ export const TechnologiesSection = () => {
     { name: "Startup", color: "#ffba00" },
   ];
 
+  const techIcons = [
+    { name: "Chrome", icon: "/src/assets/TechnologiesSection/svg/chrome.svg" },
+    {
+      name: "Android",
+      icon: "/src/assets/TechnologiesSection/svg/android.svg",
+    },
+    {
+      name: "Firebase",
+      icon: "/src/assets/TechnologiesSection/svg/firebase.svg",
+    },
+    {
+      name: "Flutter",
+      icon: "/src/assets/TechnologiesSection/svg/flutter.svg",
+    },
+    {
+      name: "Assistant",
+      icon: "/src/assets/TechnologiesSection/svg/assistant.svg",
+    },
+    {
+      name: "Google Cloud",
+      icon: "/src/assets/TechnologiesSection/svg/google_cloud.svg",
+    },
+    {
+      name: "TensorFlow",
+      icon: "/src/assets/TechnologiesSection/svg/tensor-flow.svg",
+    },
+    { name: "Figma", icon: "/src/assets/TechnologiesSection/svg/figma.svg" },
+    { name: "Gemini", icon: "/src/assets/TechnologiesSection/svg/gemini.svg" },
+    { name: "Web", icon: "/src/assets/TechnologiesSection/svg/web.svg" },
+    {
+      name: "Gemini+",
+      icon: "/src/assets/TechnologiesSection/svg/gemini+.svg",
+    },
+    { name: "Web3", icon: "/src/assets/TechnologiesSection/svg/web3.svg" },
+    { name: "GCLI", icon: "/src/assets/TechnologiesSection/svg/gcli.svg" },
+    { name: "Meets", icon: "/src/assets/TechnologiesSection/svg/meets.svg" },
+  ];
+
   return (
     <section className="w-full py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-8">
@@ -64,6 +102,21 @@ export const TechnologiesSection = () => {
                 more.
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Technologies Icons Grid */}
+        <div className="mt-20">
+          <div className="grid grid-cols-7 gap-8 items-center justify-items-center">
+            {techIcons.map((tech, index) => (
+              <div key={index} className="flex items-center justify-center">
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  className="w-20 h-20 object-contain hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

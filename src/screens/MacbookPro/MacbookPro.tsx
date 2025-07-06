@@ -17,10 +17,10 @@ export const MacbookPro = (): JSX.Element => {
           <HeroSection />
           <AboutSection />
           <TechnologiesSection />
+          <SponsorsSection />
           <StatsSection />
           <SpeakersSection />
           <TestimonialsSection />
-          <SponsorsSection />
         </main>
       </div>
     </div>
